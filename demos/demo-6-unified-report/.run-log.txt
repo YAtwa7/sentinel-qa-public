@@ -1,0 +1,14 @@
+Merging 4 source file(s):
+  - web/artifacts/junit.xml
+  - api/artifacts/junit.xml
+  - mobile/artifacts/maestro-junit.xml
+  - mobile/artifacts/maestro-ios-junit.xml
+wrote [temp]/junit-merged.xml
+wrote [temp]/index.html
+Summary: 102 total, 102 pass, 0 fail, 0 skip
+unified-report: OK
+
+note: repo/mobile/artifacts/junit.xml not found (lane may not have run)
+## lanes
+lanes present: api, mobile-maestro-android, mobile-maestro-ios, web
+merged: 102 row(s), 0 failure(s), 0 error(s), 0 skipped

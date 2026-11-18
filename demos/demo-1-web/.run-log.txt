@@ -1,0 +1,32 @@
+hared session via storageState) › REQ-A11Y-05: the checkout order overview has no axe violations beyond the filed baseline (2.5s)
+  ✓   8 [chromium] › tests/functional/cart.spec.ts:14:7 › cart › REQ-CART-01: adding a product updates the badge and the cart contents (1.1s)
+  ✓   7 [chromium] › tests/a11y/a11y.spec.ts:202:7 › a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-06: the checkout complete page has no axe violations beyond the filed baseline (1.6s)
+  ✓   5 [chromium] › tests/a11y/a11y.spec.ts:149:7 › a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-03: the cart page with one item has no axe violations beyond the filed baseline (3.1s)
+  ✓  10 [chromium] › tests/functional/checkout.spec.ts:51:7 › checkout › REQ-CHECKOUT-01: cart items carry through to the order overview with quantities and the summed subtotal (916ms)
+  ✓   9 [chromium] › tests/functional/cart.spec.ts:30:7 › cart › REQ-CART-02: removing the only product empties the cart and clears the badge (1.8s)
+  ✓   6 [chromium] › tests/a11y/a11y.spec.ts:132:7 › a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-02: the inventory page has no axe violations beyond the filed baseline (5.0s)
+  ✓  13 [chromium] › tests/functional/checkout.spec.ts:103:7 › checkout › REQ-CHECKOUT-04: an empty required field blocks checkout step one with its specific error (1.5s)
+  ✓  11 [chromium] › tests/functional/checkout.spec.ts:69:7 › checkout › REQ-CHECKOUT-02: finishing the overview confirms the order with human order copy (2.3s)
+  ✓  14 [chromium] › tests/smoke/inventory.spec.ts:16:7 › catalogue › REQ-INV-01: every product has a name and a formatted price (1.0s)
+  ✓  12 [chromium] › tests/functional/checkout.spec.ts:88:7 › checkout › REQ-CHECKOUT-03: a confirmed order empties the cart and removes the badge (2.5s)
+  ✓  17 [chromium] › tests/smoke/login.spec.ts:25:7 › authentication › REQ-LOGIN-02: a wrong password is refused and keeps the user on the login page (753ms)
+  ✓  20 [chromium] › tests/smoke/settle-guard.spec.ts:31:7 › capture settle precondition (a recorded incident control) › REQ-SETTLE-02: settleImages resolves on a settled page (positive control) (169ms)
+  ✓  16 [chromium] › tests/smoke/login.spec.ts:15:7 › authentication › REQ-LOGIN-01: valid practice user reaches the product catalogue (1.0s)
+  ✓  22 [chromium] › tests/visual/visual.spec.ts:69:7 › visual — signed-in stable pages (shared session) › REQ-VIS-02: the inventory page renders as baselined (1.0s)
+  ✓  19 [chromium] › tests/smoke/settle-guard.spec.ts:15:7 › capture settle precondition (a recorded incident control) › REQ-SETTLE-01: settleImages REFUSES a page whose images never finish loading (2.2s)
+  ✓  23 [chromium] › tests/visual/visual.spec.ts:83:7 › visual — signed-in stable pages (shared session) › REQ-VIS-03: the cart page with the two known items renders as baselined (881ms)
+  ✓  21 [chromium] › tests/visual/visual.spec.ts:58:7 › visual — login (empty storage state on purpose) › REQ-VIS-01: the login page renders as baselined (2.5s)
+  ✓  15 [chromium] › tests/smoke/inventory.spec.ts:36:7 › catalogue › REQ-INV-02: sorting by price ascending orders the catalogue low to high (3.7s)
+  ✓  25 [chromium] › tests/visual/visual.spec.ts:127:7 › visual — signed-in stable pages (shared session) › REQ-VIS-05: the checkout complete page renders as baselined (1.5s)
+  ✓  24 [chromium] › tests/visual/visual.spec.ts:101:7 › visual — signed-in stable pages (shared session) › REQ-VIS-04: checkout step one with an empty form renders as baselined (2.4s)
+  ✓  18 [chromium] › tests/smoke/login.spec.ts:36:7 › authentication › REQ-LOGIN-03: a locked-out account is refused with a specific message (7.7s)
+
+  25 passed (15.3s)
+
+◇ injected env (3) from ../.env.local
+◇ injected env (0) from ../.env.local
+◇ injected env (0) from ../.env.local
+◇ injected env (0) from ../.env.local
+◇ injected env (0) from ../.env.local
+◇ injected env (0) from ../.env.local
+◇ injected env (0) from ../.env.local

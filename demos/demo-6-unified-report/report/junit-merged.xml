@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites>
+  <testsuite name="Maestro" tests="4" failures="0" skipped="0" time="126.053">
+    <testcase name="REQ-MOB-04 menu drawer reachable" classname="REQ-MOB-04 menu drawer reachable" time="41.516" />
+    <testcase name="REQ-MOB-01 login success" classname="REQ-MOB-01 login success" time="28.078" />
+    <testcase name="REQ-MOB-03 catalogue lists products" classname="REQ-MOB-03 catalogue lists products" time="29.954" />
+    <testcase name="REQ-MOB-02 login failure" classname="REQ-MOB-02 login failure" time="26.505" />
+  </testsuite>
+  <testsuite name="Maestro iOS" tests="4" failures="0" skipped="0" time="62.114000000000004">
+    <testcase name="REQ-MOB-04 (iOS) menu drawer reachable" classname="REQ-MOB-04 (iOS) menu drawer reachable" time="18.149" />
+    <testcase name="REQ-MOB-01 (iOS) login success" classname="REQ-MOB-01 (iOS) login success" time="14.963" />
+    <testcase name="REQ-MOB-03 (iOS) catalogue lists products" classname="REQ-MOB-03 (iOS) catalogue lists products" time="15.397" />
+    <testcase name="REQ-MOB-02 (iOS) login failure" classname="REQ-MOB-02 (iOS) login failure" time="13.605" />
+  </testsuite>
+  <testsuite name="Playwright" tests="25" failures="0" skipped="0" time="51.267">
+    <testcase name="sign in once and save the shared session" classname="auth.setup.ts" time="1.278" />
+    <testcase name="a11y — logged-out login page (empty storage state on purpose) › REQ-A11Y-01: the logged-out login page has no axe violations beyond the filed baseline" classname="a11y/a11y.spec.ts" time="1.324" />
+    <testcase name="a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-02: the inventory page has no axe violations beyond the filed baseline" classname="a11y/a11y.spec.ts" time="4.962" />
+    <testcase name="a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-03: the cart page with one item has no axe violations beyond the filed baseline" classname="a11y/a11y.spec.ts" time="3.149" />
+    <testcase name="a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-04: checkout step one has no axe violations beyond the filed baseline" classname="a11y/a11y.spec.ts" time="1.651" />
+    <testcase name="a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-05: the checkout order overview has no axe violations beyond the filed baseline" classname="a11y/a11y.spec.ts" time="2.482" />
+    <testcase name="a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-06: the checkout complete page has no axe violations beyond the filed baseline" classname="a11y/a11y.spec.ts" time="1.646" />
+    <testcase name="cart › REQ-CART-01: adding a product updates the badge and the cart contents" classname="functional/cart.spec.ts" time="1.072" />
+    <testcase name="cart › REQ-CART-02: removing the only product empties the cart and clears the badge" classname="functional/cart.spec.ts" time="1.771" />
+    <testcase name="checkout › REQ-CHECKOUT-01: cart items carry through to the order overview with quantities and the summed subtotal" classname="functional/checkout.spec.ts" time="0.916" />
+    <testcase name="checkout › REQ-CHECKOUT-02: finishing the overview confirms the order with human order copy" classname="functional/checkout.spec.ts" time="2.25" />
+    <testcase name="checkout › REQ-CHECKOUT-03: a confirmed order empties the cart and removes the badge" classname="functional/checkout.spec.ts" time="2.462" />
+    <testcase name="checkout › REQ-CHECKOUT-04: an empty required field blocks checkout step one with its specific error" classname="functional/checkout.spec.ts" time="1.521" />
+    <testcase name="catalogue › REQ-INV-01: every product has a name and a formatted price" classname="smoke/inventory.spec.ts" time="1.023" />
+    <testcase name="catalogue › REQ-INV-02: sorting by price ascending orders the catalogue low to high" classname="smoke/inventory.spec.ts" time="3.701" />
+    <testcase name="authentication › REQ-LOGIN-01: valid practice user reaches the product catalogue" classname="smoke/login.spec.ts" time="1.004" />
+    <testcase name="authentication › REQ-LOGIN-02: a wrong password is refused and keeps the user on the login page" classname="smoke/login.spec.ts" time="0.753" />
+    <testcase name="authentication › REQ-LOGIN-03: a locked-out account is refused with a specific message" classname="smoke/login.spec.ts" time="7.661" />
+    <testcase name="capture settle precondition (regression control) › REQ-SETTLE-01: settleImages REFUSES a page whose images never finish loading" classname="smoke/settle-guard.spec.ts" time="2.235" />
+    <testcase name="capture settle precondition (regression control) › REQ-SETTLE-02: settleImages resolves on a settled page (positive control)" classname="smoke/settle-guard.spec.ts" time="0.169" />
+    <testcase name="visual — login (empty storage state on purpose) › REQ-VIS-01: the login page renders as baselined" classname="visual/visual.spec.ts" time="2.494" />
+    <testcase name="visual — signed-in stable pages (shared session) › REQ-VIS-02: the inventory page renders as baselined" classname="visual/visual.spec.ts" time="1.004" />
+    <testcase name="visual — signed-in stable pages (shared session) › REQ-VIS-03: the cart page with the two known items renders as baselined" classname="visual/visual.spec.ts" time="0.881" />
+    <testcase name="visual — signed-in stable pages (shared session) › REQ-VIS-04: checkout step one with an empty form renders as baselined" classname="visual/visual.spec.ts" time="2.395" />
+    <testcase name="visual — signed-in stable pages (shared session) › REQ-VIS-05: the checkout complete page renders as baselined" classname="visual/visual.spec.ts" time="1.463" />
+  </testsuite>
+  <testsuite name="pytest" tests="69" failures="0" skipped="0" time="2.2">
+    <testcase name="test_spec_snapshot_matches_recorded_sha256" classname="tests.contract.test_contract_identity_and_catalogue" time="0.002" />
+    <testcase name="test_recorded_login_response_matches_spec" classname="tests.contract.test_contract_identity_and_catalogue" time="0.002" />
+    <testcase name="test_recorded_catalogue_response_matches_spec" classname="tests.contract.test_contract_identity_and_catalogue" time="0.001" />
+    <testcase name="test_mutated_login_response_is_rejected" classname="tests.contract.test_contract_identity_and_catalogue" time="0.001" />
+    <testcase name="test_mutated_catalogue_response_is_rejected" classname="tests.contract.test_contract_identity_and_catalogue" time="0.001" />
+    <testcase name="test_recorded_apply_matches_spec" classname="tests.contract.test_contract_workshop_and_community" time="0.001" />
+    <testcase name="test_recorded_orders_all_matches_spec" classname="tests.contract.test_contract_workshop_and_community" time="0.001" />
+    <testcase name="test_recorded_post_created_matches_spec" classname="tests.contract.test_contract_workshop_and_community" time="0.001" />
+    <testcase name="test_recorded_post_by_id_matches_spec" classname="tests.contract.test_contract_workshop_and_community" time="0.002" />
+    <testcase name="test_recorded_order_status_pins_spec_drift" classname="tests.contract.test_contract_workshop_and_community" time="0.0" />
+    <testcase name="test_recorded_vehicles_pins_owner_drift" classname="tests.contract.test_contract_workshop_and_community" time="0.0" />
+    <testcase name="test_recorded_recent_feed_pins_envelope_drift" classname="tests.contract.test_contract_workshop_and_community" time="0.001" />
+    <testcase name="test_every_recorded_fixture_sha256_matches_manifest" classname="tests.contract.test_contract_workshop_and_community" time="0.002" />
+    <testcase name="test_mutated_apply_response_is_rejected" classname="tests.contract.test_contract_workshop_and_community" time="0.001" />
+    <testcase name="test_recorded_apply_is_linked_to_list_and_status" classname="tests.functional.test_recorded_workshop_flow_semantics" time="0.0" />
+    <testcase name="test_recorded_post_is_linked_to_by_id_and_feed" classname="tests.functional.test_recorded_workshop_flow_semantics" time="0.0" />
+    <testcase name="test_defaults_resolve_to_the_local_deployment" classname="tests.unit.test_config" time="0.002" />
+    <testcase name="test_user_override_overrides_with_a_practice_account" classname="tests.unit.test_config" time="0.0" />
+    <testcase name="test_url_override_is_used_verbatim" classname="tests.unit.test_config" time="0.0" />
+    <testcase name="test_target_base_url_must_be_absolute_http" classname="tests.unit.test_config" time="0.001" />
+    <testcase name="test_target_base_url_host_must_not_be_empty" classname="tests.unit.test_config" time="0.0" />
+    <testcase name="test_empty_env_value_is_rejected_not_a_default" classname="tests.unit.test_config" time="0.0" />
+    <testcase name="test_non_practice_email_is_rejected" classname="tests.unit.test_config" time="0.0" />
+    <testcase name="test_timeout_must_be_positive" classname="tests.unit.test_config" time="0.0" />
+    <testcase name="test_tcp_port_not_confused_with_url_scheme" classname="tests.unit.test_config" time="0.0" />
+    <testcase name="test_ci_selection_never_pulls_in_a_crawler_row" classname="tests.unit.test_crawler_marker_policy" time="0.001" />
+    <testcase name="test_every_selected_crawler_row_runs_under_the_lane_gate" classname="tests.unit.test_crawler_marker_policy" time="0.001" />
+    <testcase name="test_the_crawler_lane_still_exists" classname="tests.unit.test_crawler_marker_policy" time="0.016" />
+    <testcase name="test_the_marker_check_itself_can_fail" classname="tests.unit.test_crawler_marker_policy" time="0.0" />
+    <testcase name="test_ci_selection_never_pulls_in_a_graphql_row" classname="tests.unit.test_graphql_marker_policy" time="0.0" />
+    <testcase name="test_every_selected_graphql_row_runs_under_the_lane_gate" classname="tests.unit.test_graphql_marker_policy" time="0.0" />
+    <testcase name="test_the_graphql_lane_still_exists" classname="tests.unit.test_graphql_marker_policy" time="0.006" />
+    <testcase name="test_the_marker_check_itself_can_fail" classname="tests.unit.test_graphql_marker_policy" time="0.001" />
+    <testcase name="test_ci_selection_never_pulls_in_an_mfa_row" classname="tests.unit.test_mfa_marker_policy" time="0.0" />
+    <testcase name="test_every_selected_mfa_row_runs_under_the_lane_gate" classname="tests.unit.test_mfa_marker_policy" time="0.0" />
+    <testcase name="test_the_mfa_lane_still_exists" classname="tests.unit.test_mfa_marker_policy" time="0.01" />
+    <testcase name="test_the_marker_check_itself_can_fail" classname="tests.unit.test_mfa_marker_policy" time="0.0" />
+    <testcase name="test_ci_selection_never_pulls_in_an_owasp_row" classname="tests.unit.test_owasp_marker_policy" time="0.0" />
+    <testcase name="test_every_selected_owasp_row_runs_under_the_lane_gate" classname="tests.unit.test_owasp_marker_policy" time="0.001" />
+    <testcase name="test_the_owasp_lane_still_exists" classname="tests.unit.test_owasp_marker_policy" time="0.008" />
+    <testcase name="test_the_marker_check_itself_can_fail" classname="tests.unit.test_owasp_marker_policy" time="0.001" />
+    <testcase name="test_the_walk_returns_the_whole_collection" classname="tests.unit.test_paged_read_bounds" time="0.0" />
+    <testcase name="test_the_walk_raises_when_the_page_bound_is_hit" classname="tests.unit.test_paged_read_bounds" time="0.001" />
+    <testcase name="test_the_walk_raises_when_the_cursor_does_not_advance" classname="tests.unit.test_paged_read_bounds" time="0.0" />
+    <testcase name="test_the_walk_raises_on_a_non_200_page" classname="tests.unit.test_paged_read_bounds" time="0.001" />
+    <testcase name="test_the_default_bound_clears_the_collection_the_old_ceiling_missed" classname="tests.unit.test_paged_read_bounds" time="0.002" />
+    <testcase name="test_the_default_bounds_raise_arm_fires_without_an_explicit_max_pages" classname="tests.unit.test_paged_read_bounds" time="0.104" />
+    <testcase name="test_the_completeness_check_catches_a_truncated_walk_and_tolerates_growth" classname="tests.unit.test_paged_read_bounds" time="0.001" />
+    <testcase name="test_a_transient_server_error_is_retried_and_the_retry_is_reported" classname="tests.unit.test_paged_read_bounds" time="0.504" />
+    <testcase name="test_a_persistent_server_error_still_fails_the_row_loudly" classname="tests.unit.test_paged_read_bounds" time="1.504" />
+    <testcase name="test_a_4xx_is_never_retried" classname="tests.unit.test_paged_read_bounds" time="0.001" />
+    <testcase name="test_ci_selection_never_pulls_in_a_ratelimit_row" classname="tests.unit.test_ratelimit_marker_policy" time="0.001" />
+    <testcase name="test_every_selected_ratelimit_row_runs_under_the_lane_gate" classname="tests.unit.test_ratelimit_marker_policy" time="0.0" />
+    <testcase name="test_the_ratelimit_lane_still_exists" classname="tests.unit.test_ratelimit_marker_policy" time="0.008" />
+    <testcase name="test_the_marker_check_itself_can_fail" classname="tests.unit.test_ratelimit_marker_policy" time="0.0" />
+    <testcase name="test_clean_sarif_passes_the_gate" classname="tests.unit.test_sarif_gate" time="0.001" />
+    <testcase name="test_high_severity_sarif_fails_the_gate" classname="tests.unit.test_sarif_gate" time="0.001" />
+    <testcase name="test_the_sarif_gate_can_fail_on_synthetic_input" classname="tests.unit.test_sarif_gate" time="0.0" />
+    <testcase name="test_parse_sarif_counts_by_severity" classname="tests.unit.test_sarif_gate" time="0.0" />
+    <testcase name="test_the_gate_accepts_the_loopback_literals" classname="tests.unit.test_security_gate_target" time="0.0" />
+    <testcase name="test_the_gate_refuses_everything_else" classname="tests.unit.test_security_gate_target" time="0.0" />
+    <testcase name="test_ci_selection_never_pulls_in_a_security_row" classname="tests.unit.test_security_marker_policy" time="0.0" />
+    <testcase name="test_every_selected_security_row_runs_under_the_lane_gate" classname="tests.unit.test_security_marker_policy" time="0.0" />
+    <testcase name="test_the_security_lane_still_exists" classname="tests.unit.test_security_marker_policy" time="0.004" />
+    <testcase name="test_the_marker_check_itself_can_fail" classname="tests.unit.test_security_marker_policy" time="0.0" />
+    <testcase name="test_ci_selection_never_pulls_in_a_ws_row" classname="tests.unit.test_ws_marker_policy" time="0.0" />
+    <testcase name="test_every_selected_ws_row_runs_under_the_lane_gate" classname="tests.unit.test_ws_marker_policy" time="0.0" />
+    <testcase name="test_the_ws_lane_still_exists" classname="tests.unit.test_ws_marker_policy" time="0.003" />
+    <testcase name="test_the_marker_check_itself_can_fail" classname="tests.unit.test_ws_marker_policy" time="0.0" />
+  </testsuite>
+</testsuites>

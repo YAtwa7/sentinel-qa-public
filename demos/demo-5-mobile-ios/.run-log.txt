@@ -1,0 +1,9 @@
+Waiting for flows to complete...
+[Passed] REQ-MOB-04 (iOS) menu drawer reachable (18s)
+[Passed] REQ-MOB-01 (iOS) login success (15s)
+[Passed] REQ-MOB-03 (iOS) catalogue lists products (15s)
+[Passed] REQ-MOB-02 (iOS) login failure (14s)
+
+4/4 Flows Passed in 1m 2s
+## media note
+recording captured

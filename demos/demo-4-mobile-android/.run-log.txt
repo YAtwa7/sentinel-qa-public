@@ -1,0 +1,15 @@
+Waiting for flows to complete...
+[Passed] REQ-MOB-04 menu drawer reachable (25s)
+[Passed] REQ-MOB-01 login success (20s)
+[Passed] REQ-MOB-03 catalogue lists products (19s)
+[Passed] REQ-MOB-02 login failure (19s)
+
+4/4 Flows Passed in 1m 23s
+
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by com.google.protobuf.UnsafeUtil$MemoryAccessor (file:[home]/.local/maestro/lib/protobuf-java-3.21.9.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.protobuf.UnsafeUtil$MemoryAccessor
+WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+## media note
+recording captured

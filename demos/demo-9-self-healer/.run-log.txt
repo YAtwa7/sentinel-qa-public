@@ -1,0 +1,54 @@
+## bridge
+web/pages/LoginPage.ts:16 [test-id] login-xbutton -> PROPOSAL
+    closest live element: <input>, data-test='login-button'  [rule: engine.proposal.test_id]
+--- a/web/pages/LoginPage.ts
++++ b/web/pages/LoginPage.ts
+@@ -14,5 +14,5 @@
+ 
+   get submit(): Locator {
+-    return this.page.getByTestId('login-xbutton');
++    return this.page.getByTestId('login-button');
+   }
+## patch dry-run
+patching file 'web/pages/LoginPage.ts'
+## patch applied
+patching file 'web/pages/LoginPage.ts'
+## heal audit
+audit: appended 1 event to [temp]/heal-audit.jsonl
+#8 [test-id] username -> STABLE
+    matched <input>, data-test='username', role=textbox, name='Username'  [rule: engine.stable_exact]
+#12 [test-id] password -> STABLE
+    matched <input>, data-test='password', role=textbox, name='Password'  [rule: engine.stable_exact]
+#16 [test-id] login-xbutton -> PROPOSAL
+    closest live element: <input>, data-test='login-button'  (confidence 0.96)  [rule: engine.proposal.test_id]
+--- a/web/pages/LoginPage.ts
++++ b/web/pages/LoginPage.ts
+@@ -14,5 +14,5 @@
+ 
+   get submit(): Locator {
+-    return this.page.getByTestId('login-xbutton');
++    return this.page.getByTestId('login-button');
+   }
+ 
+#20 [test-id] error -> DENIED
+    below floor: no similar data-test id in the DOM  [rule: engine.deny.below_floor]
+## seal / verify / tamper
+<seal:wall-clock-redacted>
+audit verify: chain intact over 1 event(s); seal matches - OK
+audit verify: record 2 is not a heal-audit event
+## post-patch heal
+#8 [test-id] username -> STABLE
+    matched <input>, data-test='username', role=textbox, name='Username'  [rule: engine.stable_exact]
+#12 [test-id] password -> STABLE
+    matched <input>, data-test='password', role=textbox, name='Password'  [rule: engine.stable_exact]
+#16 [test-id] login-button -> STABLE
+    matched <input>, data-test='login-button'  [rule: engine.stable_exact]
+#20 [test-id] error -> DENIED
+    below floor: no similar data-test id in the DOM  [rule: engine.deny.below_floor]
+## verdicts
+- OK: failure bridge proposal
+- OK: heal audit sealed
+- OK: audit tamper refused
+- OK: patch dry-run
+- OK: patch applied
+- OK: post-patch GREEN

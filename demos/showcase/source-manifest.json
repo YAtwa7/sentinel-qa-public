@@ -1,0 +1,62 @@
+[
+  {
+    "artifact": "demos/demo-1-web/media/screenshots/smoke-inventory-catalogue--52cba--name-and-a-formatted-price-chromium--test-finished-1.png",
+    "pack": "demo-1-web",
+    "sha256": "c051c9e21fcac004dfa36c68235f346a2b9ede9a27b6b8a9cfec902c03c20515",
+    "kind": "card"
+  },
+  {
+    "artifact": "demos/demo-2-api-contract/media/evidence/gate-vs-breaking-diff.png",
+    "pack": "demo-2-api-contract",
+    "sha256": "2f24f51c2fbfc116bb45075e7e0ded03775d6871b1d7c03bb03b96ac1a5f617d",
+    "kind": "card"
+  },
+  {
+    "artifact": "demos/demo-3-api-security/media/evidence/authz-matrix-rows.png",
+    "pack": "demo-3-api-security",
+    "sha256": "47c436e1a094d335d6d21cd204866ae85f70491dc1c363c55ecc974742897657",
+    "kind": "card"
+  },
+  {
+    "artifact": "demos/demo-4-mobile-android/media/video/demo4-android-flows.mp4",
+    "pack": "demo-4-mobile-android",
+    "sha256": "dfebc26d3dc629b02a9a79b345f3b4ebe4f3a678f1fda6888f0fe1bbb01065af",
+    "kind": "clip"
+  },
+  {
+    "artifact": "demos/demo-5-mobile-ios/media/video/demo5-ios-flows.mp4",
+    "pack": "demo-5-mobile-ios",
+    "sha256": "09ee7078b3333aee9588c737786d1966463adca2df3bad6abbfacf04b1806350",
+    "kind": "clip"
+  },
+  {
+    "artifact": "demos/demo-6-unified-report/media/evidence/report.png",
+    "pack": "demo-6-unified-report",
+    "sha256": "408968a9fe60fdc71913a9688d60ff27e50f8514e36740c5a2a92e8d3951dc87",
+    "kind": "card"
+  },
+  {
+    "artifact": "demos/demo-7-live-evals/media/evidence/live-refusal.png",
+    "pack": "demo-7-live-evals",
+    "sha256": "c16daeb2a233b1ccec930e087d6cb3c29fbf282127ecd5fca9d70620d6027e19",
+    "kind": "card"
+  },
+  {
+    "artifact": "demos/demo-8-roster-audit/media/evidence/roster-judge-gates.png",
+    "pack": "demo-8-roster-audit",
+    "sha256": "39292752e9cd28176a2af0a7549a5892414fcfb7997a17e94be26dc9b968615b",
+    "kind": "card"
+  },
+  {
+    "artifact": "demos/demo-9-self-healer/media/evidence/bridge-proposal-patch.png",
+    "pack": "demo-9-self-healer",
+    "sha256": "cbabca59305353be9fe54c7c3f9175969c2378a03079130b6586ab1dcbc247c1",
+    "kind": "card"
+  },
+  {
+    "artifact": "demos/demo-10-dashboard/media/evidence/dashboard.png",
+    "pack": "demo-10-dashboard",
+    "sha256": "ea4afe0087ba07c01a67673d71a6d2c2179d117d8365710c7a4d1518a38ca0e2",
+    "kind": "card"
+  }
+]

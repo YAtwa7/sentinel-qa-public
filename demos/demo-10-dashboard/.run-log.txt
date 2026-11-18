@@ -1,0 +1,11 @@
+dashboard: wrote repo/demos/demo-10-dashboard/report/index.html (1745 bytes, sha256 4e944d098272265d...)
+## deterministic rebuild / stamp opt-in / redaction
+deterministic bytes identical: True
+stamp build differs: True
+secret rendered as [REDACTED], raw absent: True
+
+## verdicts
+- OK: real streak page
+- OK: deterministic rebuild
+- OK: stamp opt-in differs
+- OK: secret redacted

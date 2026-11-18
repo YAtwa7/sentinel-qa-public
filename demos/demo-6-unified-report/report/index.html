@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'>
+<title>Unified Test Report</title>
+<style>body{font-family:system-ui,monospace;margin:1rem}table{border-collapse:collapse;margin:1rem 0}th,td{border:1px solid #999;padding:4px 8px}pass{color:#080}fail{color:#c00}skip{color:#888}h1{font-size:1.4em}</style>
+</head><body><h1>Unified Test Report</h1>
+<p>Total: 102 tests &nbsp; <b style='color:#080'>102 passed</b> &nbsp; <b style='color:#c00'>0 failed</b> &nbsp; <b style='color:#888'>0 skipped</b></p>
+<h2>Maestro (4 tests: 4 pass, 0 fail, 0 skip)</h2>
+<table><tr><th>Test</th><th>Status</th><th>Time (s)</th></tr>
+<tr><td>REQ-MOB-04 menu drawer reachable.REQ-MOB-04 menu drawer reachable</td><td style='color:#080'>PASS</td><td>41.52</td></tr>
+<tr><td>REQ-MOB-01 login success.REQ-MOB-01 login success</td><td style='color:#080'>PASS</td><td>28.08</td></tr>
+<tr><td>REQ-MOB-03 catalogue lists products.REQ-MOB-03 catalogue lists products</td><td style='color:#080'>PASS</td><td>29.95</td></tr>
+<tr><td>REQ-MOB-02 login failure.REQ-MOB-02 login failure</td><td style='color:#080'>PASS</td><td>26.50</td></tr>
+</table>
+<h2>Maestro iOS (4 tests: 4 pass, 0 fail, 0 skip)</h2>
+<table><tr><th>Test</th><th>Status</th><th>Time (s)</th></tr>
+<tr><td>REQ-MOB-04 (iOS) menu drawer reachable.REQ-MOB-04 (iOS) menu drawer reachable</td><td style='color:#080'>PASS</td><td>18.15</td></tr>
+<tr><td>REQ-MOB-01 (iOS) login success.REQ-MOB-01 (iOS) login success</td><td style='color:#080'>PASS</td><td>14.96</td></tr>
+<tr><td>REQ-MOB-03 (iOS) catalogue lists products.REQ-MOB-03 (iOS) catalogue lists products</td><td style='color:#080'>PASS</td><td>15.40</td></tr>
+<tr><td>REQ-MOB-02 (iOS) login failure.REQ-MOB-02 (iOS) login failure</td><td style='color:#080'>PASS</td><td>13.61</td></tr>
+</table>
+<h2>Playwright (25 tests: 25 pass, 0 fail, 0 skip)</h2>
+<table><tr><th>Test</th><th>Status</th><th>Time (s)</th></tr>
+<tr><td>auth.setup.ts.sign in once and save the shared session</td><td style='color:#080'>PASS</td><td>1.28</td></tr>
+<tr><td>a11y/a11y.spec.ts.a11y — logged-out login page (empty storage state on purpose) › REQ-A11Y-01: the logged-out login page has no axe violations beyond the filed baseline</td><td style='color:#080'>PASS</td><td>1.32</td></tr>
+<tr><td>a11y/a11y.spec.ts.a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-02: the inventory page has no axe violations beyond the filed baseline</td><td style='color:#080'>PASS</td><td>4.96</td></tr>
+<tr><td>a11y/a11y.spec.ts.a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-03: the cart page with one item has no axe violations beyond the filed baseline</td><td style='color:#080'>PASS</td><td>3.15</td></tr>
+<tr><td>a11y/a11y.spec.ts.a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-04: checkout step one has no axe violations beyond the filed baseline</td><td style='color:#080'>PASS</td><td>1.65</td></tr>
+<tr><td>a11y/a11y.spec.ts.a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-05: the checkout order overview has no axe violations beyond the filed baseline</td><td style='color:#080'>PASS</td><td>2.48</td></tr>
+<tr><td>a11y/a11y.spec.ts.a11y — signed-in flow pages (shared session via storageState) › REQ-A11Y-06: the checkout complete page has no axe violations beyond the filed baseline</td><td style='color:#080'>PASS</td><td>1.65</td></tr>
+<tr><td>functional/cart.spec.ts.cart › REQ-CART-01: adding a product updates the badge and the cart contents</td><td style='color:#080'>PASS</td><td>1.07</td></tr>
+<tr><td>functional/cart.spec.ts.cart › REQ-CART-02: removing the only product empties the cart and clears the badge</td><td style='color:#080'>PASS</td><td>1.77</td></tr>
+<tr><td>functional/checkout.spec.ts.checkout › REQ-CHECKOUT-01: cart items carry through to the order overview with quantities and the summed subtotal</td><td style='color:#080'>PASS</td><td>0.92</td></tr>
+<tr><td>functional/checkout.spec.ts.checkout › REQ-CHECKOUT-02: finishing the overview confirms the order with human order copy</td><td style='color:#080'>PASS</td><td>2.25</td></tr>
+<tr><td>functional/checkout.spec.ts.checkout › REQ-CHECKOUT-03: a confirmed order empties the cart and removes the badge</td><td style='color:#080'>PASS</td><td>2.46</td></tr>
+<tr><td>functional/checkout.spec.ts.checkout › REQ-CHECKOUT-04: an empty required field blocks checkout step one with its specific error</td><td style='color:#080'>PASS</td><td>1.52</td></tr>
+<tr><td>smoke/inventory.spec.ts.catalogue › REQ-INV-01: every product has a name and a formatted price</td><td style='color:#080'>PASS</td><td>1.02</td></tr>
+<tr><td>smoke/inventory.spec.ts.catalogue › REQ-INV-02: sorting by price ascending orders the catalogue low to high</td><td style='color:#080'>PASS</td><td>3.70</td></tr>
+<tr><td>smoke/login.spec.ts.authentication › REQ-LOGIN-01: valid practice user reaches the product catalogue</td><td style='color:#080'>PASS</td><td>1.00</td></tr>
+<tr><td>smoke/login.spec.ts.authentication › REQ-LOGIN-02: a wrong password is refused and keeps the user on the login page</td><td style='color:#080'>PASS</td><td>0.75</td></tr>
+<tr><td>smoke/login.spec.ts.authentication › REQ-LOGIN-03: a locked-out account is refused with a specific message</td><td style='color:#080'>PASS</td><td>7.66</td></tr>
+<tr><td>smoke/settle-guard.spec.ts.capture settle precondition (regression control) › REQ-SETTLE-01: settleImages REFUSES a page whose images never finish loading</td><td style='color:#080'>PASS</td><td>2.23</td></tr>
+<tr><td>smoke/settle-guard.spec.ts.capture settle precondition (regression control) › REQ-SETTLE-02: settleImages resolves on a settled page (positive control)</td><td style='color:#080'>PASS</td><td>0.17</td></tr>
+<tr><td>visual/visual.spec.ts.visual — login (empty storage state on purpose) › REQ-VIS-01: the login page renders as baselined</td><td style='color:#080'>PASS</td><td>2.49</td></tr>
+<tr><td>visual/visual.spec.ts.visual — signed-in stable pages (shared session) › REQ-VIS-02: the inventory page renders as baselined</td><td style='color:#080'>PASS</td><td>1.00</td></tr>
+<tr><td>visual/visual.spec.ts.visual — signed-in stable pages (shared session) › REQ-VIS-03: the cart page with the two known items renders as baselined</td><td style='color:#080'>PASS</td><td>0.88</td></tr>
+<tr><td>visual/visual.spec.ts.visual — signed-in stable pages (shared session) › REQ-VIS-04: checkout step one with an empty form renders as baselined</td><td style='color:#080'>PASS</td><td>2.40</td></tr>
+<tr><td>visual/visual.spec.ts.visual — signed-in stable pages (shared session) › REQ-VIS-05: the checkout complete page renders as baselined</td><td style='color:#080'>PASS</td><td>1.46</td></tr>
+</table>
+<h2>pytest (69 tests: 69 pass, 0 fail, 0 skip)</h2>
+<table><tr><th>Test</th><th>Status</th><th>Time (s)</th></tr>
+<tr><td>tests.contract.test_contract_identity_and_catalogue.test_spec_snapshot_matches_recorded_sha256</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_identity_and_catalogue.test_recorded_login_response_matches_spec</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_identity_and_catalogue.test_recorded_catalogue_response_matches_spec</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_identity_and_catalogue.test_mutated_login_response_is_rejected</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_identity_and_catalogue.test_mutated_catalogue_response_is_rejected</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_workshop_and_community.test_recorded_apply_matches_spec</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_workshop_and_community.test_recorded_orders_all_matches_spec</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_workshop_and_community.test_recorded_post_created_matches_spec</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_workshop_and_community.test_recorded_post_by_id_matches_spec</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_workshop_and_community.test_recorded_order_status_pins_spec_drift</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_workshop_and_community.test_recorded_vehicles_pins_owner_drift</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_workshop_and_community.test_recorded_recent_feed_pins_envelope_drift</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_workshop_and_community.test_every_recorded_fixture_sha256_matches_manifest</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.contract.test_contract_workshop_and_community.test_mutated_apply_response_is_rejected</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.functional.test_recorded_workshop_flow_semantics.test_recorded_apply_is_linked_to_list_and_status</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.functional.test_recorded_workshop_flow_semantics.test_recorded_post_is_linked_to_by_id_and_feed</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_config.test_defaults_resolve_to_the_local_deployment</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_config.test_user_override_overrides_with_a_practice_account</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_config.test_url_override_is_used_verbatim</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_config.test_target_base_url_must_be_absolute_http</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_config.test_target_base_url_host_must_not_be_empty</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_config.test_empty_env_value_is_rejected_not_a_default</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_config.test_non_practice_email_is_rejected</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_config.test_timeout_must_be_positive</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_config.test_tcp_port_not_confused_with_url_scheme</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_crawler_marker_policy.test_ci_selection_never_pulls_in_a_crawler_row</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_crawler_marker_policy.test_every_selected_crawler_row_runs_under_the_lane_gate</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_crawler_marker_policy.test_the_crawler_lane_still_exists</td><td style='color:#080'>PASS</td><td>0.02</td></tr>
+<tr><td>tests.unit.test_crawler_marker_policy.test_the_marker_check_itself_can_fail</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_graphql_marker_policy.test_ci_selection_never_pulls_in_a_graphql_row</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_graphql_marker_policy.test_every_selected_graphql_row_runs_under_the_lane_gate</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_graphql_marker_policy.test_the_graphql_lane_still_exists</td><td style='color:#080'>PASS</td><td>0.01</td></tr>
+<tr><td>tests.unit.test_graphql_marker_policy.test_the_marker_check_itself_can_fail</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_mfa_marker_policy.test_ci_selection_never_pulls_in_an_mfa_row</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_mfa_marker_policy.test_every_selected_mfa_row_runs_under_the_lane_gate</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_mfa_marker_policy.test_the_mfa_lane_still_exists</td><td style='color:#080'>PASS</td><td>0.01</td></tr>
+<tr><td>tests.unit.test_mfa_marker_policy.test_the_marker_check_itself_can_fail</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_owasp_marker_policy.test_ci_selection_never_pulls_in_an_owasp_row</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_owasp_marker_policy.test_every_selected_owasp_row_runs_under_the_lane_gate</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_owasp_marker_policy.test_the_owasp_lane_still_exists</td><td style='color:#080'>PASS</td><td>0.01</td></tr>
+<tr><td>tests.unit.test_owasp_marker_policy.test_the_marker_check_itself_can_fail</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_the_walk_returns_the_whole_collection</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_the_walk_raises_when_the_page_bound_is_hit</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_the_walk_raises_when_the_cursor_does_not_advance</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_the_walk_raises_on_a_non_200_page</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_the_default_bound_clears_the_collection_the_old_ceiling_missed</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_the_default_bounds_raise_arm_fires_without_an_explicit_max_pages</td><td style='color:#080'>PASS</td><td>0.10</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_the_completeness_check_catches_a_truncated_walk_and_tolerates_growth</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_a_transient_server_error_is_retried_and_the_retry_is_reported</td><td style='color:#080'>PASS</td><td>0.50</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_a_persistent_server_error_still_fails_the_row_loudly</td><td style='color:#080'>PASS</td><td>1.50</td></tr>
+<tr><td>tests.unit.test_paged_read_bounds.test_a_4xx_is_never_retried</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_ratelimit_marker_policy.test_ci_selection_never_pulls_in_a_ratelimit_row</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_ratelimit_marker_policy.test_every_selected_ratelimit_row_runs_under_the_lane_gate</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_ratelimit_marker_policy.test_the_ratelimit_lane_still_exists</td><td style='color:#080'>PASS</td><td>0.01</td></tr>
+<tr><td>tests.unit.test_ratelimit_marker_policy.test_the_marker_check_itself_can_fail</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_sarif_gate.test_clean_sarif_passes_the_gate</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_sarif_gate.test_high_severity_sarif_fails_the_gate</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_sarif_gate.test_the_sarif_gate_can_fail_on_synthetic_input</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_sarif_gate.test_parse_sarif_counts_by_severity</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_security_gate_target.test_the_gate_accepts_the_loopback_literals</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_security_gate_target.test_the_gate_refuses_everything_else</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_security_marker_policy.test_ci_selection_never_pulls_in_a_security_row</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_security_marker_policy.test_every_selected_security_row_runs_under_the_lane_gate</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_security_marker_policy.test_the_security_lane_still_exists</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_security_marker_policy.test_the_marker_check_itself_can_fail</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_ws_marker_policy.test_ci_selection_never_pulls_in_a_ws_row</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_ws_marker_policy.test_every_selected_ws_row_runs_under_the_lane_gate</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_ws_marker_policy.test_the_ws_lane_still_exists</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+<tr><td>tests.unit.test_ws_marker_policy.test_the_marker_check_itself_can_fail</td><td style='color:#080'>PASS</td><td>0.00</td></tr>
+</table>
+</body></html>

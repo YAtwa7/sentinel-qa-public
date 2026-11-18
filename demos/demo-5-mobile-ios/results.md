@@ -1,0 +1,15 @@
+# demo-5-mobile-ios results
+
+- summary: GREEN: 4 row(s), 0 failure(s), 0 error(s), 0 skipped
+- maestro exit code of the suite run: 0
+- recording: recording captured (media/video/, sha-swept by the demos guard)
+- media: the flow matrix + the clean output tail under media/evidence/
+  (see media/INDEX.md)
+- the LAST 4000 CHARS of the (clean) run log: .run-log.txt
+
+## honest framing
+
+This demo is the MOBILE-IOS story: the same four committed flows on the
+pinned simulator, one run, a recording from the same capture. A green
+run shows the flows holding; a red run says red - no retries exist
+here, so a flake is a finding per the repo's working agreements.

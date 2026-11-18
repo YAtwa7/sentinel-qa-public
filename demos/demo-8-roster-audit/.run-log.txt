@@ -1,0 +1,74 @@
+## roster gate
+ok    registry well-formed: 8 specialist row(s), 4 columns each, no duplicate ids
+## roster selftest (expected red control inside a green gate)
+ok    registry well-formed: 8 specialist row(s), 4 columns each, no duplicate ids
+check-roster selftest: gate catches a malformed row
+## judge invariants
+ok    prover: review-only / non-merge invariant present
+ok    prover: memory-exclusion rule present
+ok    auditor: review-only / non-merge invariant present
+ok    auditor: memory-exclusion rule present
+ok    judges are cross-wired (each names the other)
+
+judge invariants: all hold
+## judge selftest (the FAIL line is the EXPECTED red control)
+ok    prover(selftest): review-only / non-merge invariant present
+ok    prover(selftest): memory-exclusion rule present
+ok    auditor(selftest): review-only / non-merge invariant present
+ok    auditor(selftest): memory-exclusion rule present
+ok    broken-auditor(selftest): review-only / non-merge invariant present
+FAIL  broken-auditor(selftest): auditor.md lacks the memory-exclusion rule
+check-judges selftest: gate catches a judge missing its invariant
+## orchestrator selftest
+orchestrate selftest: aggregate is fail-closed and catches a lying gate
+## plan
+{
+  "domain": "security",
+  "requirement": "REQ-API-17: a user cannot read another user's order (including payment data) by swapping the order id",
+  "read_chain": [
+    "project conventions",
+    "docs/ARCHITECTURE.md",
+    "docs/ROADMAP.md",
+    "git log --oneline -10"
+  ],
+  "memory_scope": {
+    "AND": [
+      {
+        "user_id": "sentinel-qa"
+      }
+    ]
+  },
+  "specialist_prompt": "You are the SECURITY specialist for sentinel-qa. One item, then stop. Requirement (verbatim): \"REQ-API-17: a user cannot read another user's order (including payment data) by swapping the order id\". Follow agents/ROSTER.md's shared architecture: read the read-chain, search memory in the sentinel-qa scope, run this domain's gate, ship behind branch->PR with a negative control, and propose the version bump. Never merge, never bump - MAIN arbitrates.",
+  "judges": [
+    "qa-prover",
+    "auditor"
+  ],
+  "judge_prompts": {
+    "qa-prover": "You are the independent reviewer for sentinel-qa. Review-only. Requirement: \"REQ-API-17: a user cannot read another user's order (including payment data) by swapping the order id\". Replay it, run the domain gate, demand a negative control, report PASS/PASS-WITH-FINDINGS/FAIL per docs/PROVER.md.",
+    "auditor": "You are the AUDITOR for sentinel-qa. Review-only. Verify the gate for domain 'security' CAN fail: construct the red input, capture the real exit code, revert, show green. Report GATE-SOUND/GATE-BROKEN per agents/auditor.md."
+  },
+  "gates": [
+    "bash scripts/check-conventions.sh",
+    "cd api && .venv/bin/pytest -m security -q"
+  ]
+}
+## aggregate
+{
+  "verdict": "FAIL",
+  "total": 2,
+  "failed": [
+    "security-gate"
+  ],
+  "rule": "fail-closed: any non-pass verdict (or a pass with exit_code != 0) fails the item"
+}
+## memstore exclusion
+memstore: exclusion holds - no judge records present
+## verdicts
+- OK: roster gate
+- OK: roster selftest
+- OK: judge invariants
+- OK: judge selftest
+- OK: orchestrator selftest
+- OK: reproducible plan
+- OK: fail-closed aggregate
+- OK: memstore exclusion

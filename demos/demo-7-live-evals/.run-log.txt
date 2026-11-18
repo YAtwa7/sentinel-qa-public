@@ -1,0 +1,16 @@
+## offline gate (--mode fixed)
+eval-gate: mode=fixed threshold=0.90 cases=4
+  PASS  case-01-product-price
+  PASS  case-02-login-refusal
+  PASS  case-03-jwt-alg-none
+  PASS  case-04-bola
+
+eval-gate: 4/4 cases passed (pass-rate 1.00, threshold 0.90)
+eval-gate: PASSED
+## keyless live refusal (--mode live, scrubbed env)
+eval-gate: mode=live threshold=0.90 cases=4
+  ERROR case-01-product-price: generator failed: no live-LLM provider configured: set EVAL_LLM_PROVIDER (and the provider's key) in .env.local or the environment - the gate cannot run a live LLM without one
+## unknown-provider refusal (EVAL_LLM_PROVIDER=bogus)
+eval-gate: mode=live threshold=0.90 cases=4
+  ERROR case-01-product-price: generator failed: unknown EVAL_LLM_PROVIDER 'bogus' - known providers: gemini, generic, grok, groq, openai
+## dispatch-only workflow: confirmed
