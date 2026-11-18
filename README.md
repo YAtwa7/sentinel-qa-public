@@ -43,8 +43,7 @@ The [evidence index](docs/EVIDENCE.md) lists every pack; the
 
 ## Author
 
-Built by Joey (YAtwa7). Open to QA automation, SDET, test engineering, and
-agentic-quality roles — reach out through LinkedIn if you're hiring.
+Built by Joey (YAtwa7).
 
 ## License
 
