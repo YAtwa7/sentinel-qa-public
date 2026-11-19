@@ -31,18 +31,35 @@ A deterministic golden-dataset gate with a live-LLM adapter that is
 provider-agnostic. Live execution is dispatch-only: without a configured
 provider the gate refuses with a named reason. RAG retrieval and RAGAS-style
 metrics are thresholded and reported honestly when results fall below target.
+A small agent roster sits alongside it: judges and an auditor, a working-memory
+store with judge exclusion, and an orchestrator that plans work and aggregates
+verdicts fail-closed.
 
 ## 5 — Agentic resilience
 
 A deterministic self-healer proposes locator fixes as reviewable diffs from
-a real failure and DOM snapshot, with guardrails against unsafe changes. A
-failure bridge feeds it real JUnit output; a dashboard renders results,
-working memory, heal-audit state, and orchestrator state — absent inputs show
-as "No data yet" rather than invented zeros.
+a real failure and DOM snapshot, with guardrails against unsafe changes — it
+does not write or auto-merge. A failure bridge feeds it real JUnit output; a
+dashboard renders results, working memory, heal-audit state, and orchestrator
+state, with absent inputs shown as "No data yet" rather than invented zeros.
+
+Around that core, an operational layer: one fail-closed trigger entry point
+over a grounded suite registry (the remote backend dispatches but never
+executes), plain-English notifications composed from the same results reader,
+and a scheduler that reuses the same registry with a lock and visible skips.
 
 ## 6 — Demos
 
-Ten script-regenerated packs make the above sellable and auditable. Each
-pack ships provenance, results, a bounded run log, and sha-swept media. A
-guard verifies every pack, every generator's selftest, roster coverage, and
-content privacy; the LinkedIn video is a cut of those packs' own artifacts.
+Ten regenerated packs make the above auditable. Each pack ships provenance,
+results, a bounded run log, and sha-swept media. The packs were produced by the
+project's own tooling in single runs; the tooling itself is not published in
+this repository, and the packs are published as output plus provenance. The
+showcase video is a cut of those packs' own artifacts.
+
+## What this repository publishes
+
+The working codebase — suites, harness, evaluation stack, generators — is not
+public here. This repository publishes the evidence layer: the results, the
+provenance that explains them, the media with hashes, and the demonstration
+video assembled from them. The [license](../LICENSE)
+covers the published material and keeps copyright with the author.

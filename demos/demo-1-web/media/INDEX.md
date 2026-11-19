@@ -1,8 +1,7 @@
 # demo-1-web media index
 
 # every line: <media-relative path> (<bytes> bytes, sha256[:16] <sha>)
-# swept bi-directionally by demos/check.py - a tampered or unlisted
-# media file cannot pass the guard (REQ-API-15's fixture-sha precedent)
+# hashes recorded when the pack was generated
 
 - screenshots/a11y-a11y-a11y---logged-ou-dc9e2-s-beyond-the-filed-baseline-chromium--test-finished-1.png (29490 bytes, sha256[:16] d42906c176bc91f7)
 - screenshots/a11y-a11y-a11y---signed-in-20e67-s-beyond-the-filed-baseline-chromium--test-finished-1.png (44464 bytes, sha256[:16] 5daef10618ea8543)

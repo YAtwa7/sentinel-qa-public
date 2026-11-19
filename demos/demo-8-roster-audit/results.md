@@ -21,7 +21,7 @@
   layer. Nothing here claims a dispatch that did not happen
 - media: four rendered transcripts of the REAL tool output
   (media/evidence/, sha-swept via media/INDEX.md)
-- the bounded, clean run log: .run-log.txt
+- the bounded, redacted run log: .run-log.txt
 
 ## honest framing
 

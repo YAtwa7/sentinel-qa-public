@@ -1,20 +1,10 @@
-# demo-5-mobile-ios PROVENANCE
+# demo-5-mobile-ios — provenance
 
-- generated: 2026-11-17 by `demos/gen-demo5.py run` (committed script; the pack is
-  regenerated, never hand-staged)
-- suite: the repo's committed iOS Maestro flows (REQ-MOB-01..04) via
-  `maestro test --udid D9CA6EE0-1951-4A6B-A396-8C72EBAE9F94 mobile/flows-ios/ --format=JUNIT
-  --output <tmp>/junit.xml` (maestro 2.11 needs BOTH flags - a recorded incident)
-  under DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer - one run, no retries
-- toolchain: maestro 2.11.0 at the PIN; target: the
-  sha-pinned Sauce Labs practice app (com.saucelabs.SwagLabsMobileApp) on the
-  pinned simulator (iPhone); Xcode resolves through
-  DEVELOPER_DIR (no sudo xcode-select - the a recorded incident no-sudo path)
-- privacy-safety: the practice app is a public automation-practice target
-  whose test credentials are printed on its own login screen (the flows
-  already commit them); outputs clean of token/email shapes
-- motion-story: yes (the flows ARE the motion story): media/video/
-  demo5-ios-flows.mp4 recorded from the SAME run via `xcrun simctl io
-  recordVideo` (recording captured); the guard demands this video for the pack
-- qa framing: a green run shows the flows holding on iOS on the pinned
-  toolchain; a red run is committed as red (flake-rule: no retries)
+- **generated:** 2026-11-17 by the project's own iOS-lane generator (not published in this repository); the pack is regenerated from the run, never hand-staged.
+- **what ran:** the same four Maestro flows — login success, login failure, catalogue, menu drawer — on Maestro 2.11 against the iOS build, with JUnit output. Maestro 2.11 needs both `--format=JUNIT` and `--output`; `--output` alone writes nothing.
+- **target:** the sha256-pinned Sauce Labs practice app (`com.saucelabs.SwagLabsMobileApp`) on an iPhone simulator. Xcode is selected through `DEVELOPER_DIR`; no `sudo` and no `xcode-select` mutation is used.
+- **result:** 4/4 flows passed in one run, no retries.
+- **recording:** `media/video/demo5-ios-flows.mp4`, captured with `xcrun simctl io recordVideo` during the same run that produced the JUnit rows.
+- **visual evidence:** the flow matrix, the redacted output tail and the recording, each with size and sha256 in `media/INDEX.md`.
+- **privacy:** the practice app is a public automation target whose test accounts are printed on its own login screen; token/email shapes are removed before anything is written.
+- **scope:** the same four paths on one simulator and one pinned app build. Platform behaviour is not generalised beyond that.

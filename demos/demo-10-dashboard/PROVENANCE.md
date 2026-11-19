@@ -1,19 +1,9 @@
-# demo-10-dashboard PROVENANCE
+# demo-10-dashboard — provenance
 
-- generated: 2026-11-17 by `demos/gen-demo10.py run` (committed script; the pack is
-  regenerated, never hand-staged) from the repo's own
-  `harness/dashboard.py build --junit <three committed JUnit truths>`
-- suite: the REAL streak from committed truth - the 102-row unified
-  report, the 13-row pytest security lane, and the 4-row fail-capture
-  (1 failing case named verbatim, 3 skipped). No memstore/audit input
-  was passed: those sections render the tool's own "No data yet" notes,
-  never invented zeros
-- privacy-safety: no key read, no server/network, no live data; the
-  redaction control's secret-shaped string and its page live ONLY in a
-  temp dir and never enter the pack; outputs clean before writing
-- motion-story: no (a static page has no motion surface; rule 6 evidence
-  is the chromium render of the SAME committed report/index.html)
-- determinism: the committed page is byte-identical across rebuilds;
-  `--stamp` is the explicit opt-in (proven to differ in a temp build).
-  Both controls, plus the [REDACTED] control, are tested in the
-  generator's selftest and verified on every run
+- **generated:** 2026-11-17 by the project's own dashboard generator (not published in this repository); the pack is regenerated from the run, never hand-staged.
+- **what ran:** the dashboard over three committed JUnit truths — the 102-row unified report, the 13-row security lane, and a 4-row failure capture (one failing case named verbatim, three skipped).
+- **what is absent:** no working-memory or audit input was passed, so those sections show the tool's own "No data yet" notes instead of invented zeros.
+- **safety:** the redaction control's secret-shaped string and its page exist only in a temporary directory and never enter the pack; token shapes are removed before writing.
+- **determinism:** the committed page is byte-identical across rebuilds; an explicit timestamp option is the only intended way to change it.
+- **visual evidence:** the committed page and its chromium render under `media/`, with sha256 in `media/INDEX.md`.
+- **scope:** four specific committed inputs. The page states what it received and what it did not.

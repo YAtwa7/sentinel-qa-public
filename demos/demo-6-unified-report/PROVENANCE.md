@@ -1,16 +1,9 @@
-# demo-6-unified-report PROVENANCE
+# demo-6-unified-report — provenance
 
-- generated: 2026-11-17 by `demos/gen-demo6.py run` (committed script; the pack is
-  regenerated, never hand-staged) from the repo's own
-  `scripts/unified-report.sh --out <tmp>` (exit 0)
-- suite: the repo's unified report over the lanes' junit XML written by
-  the capture runs in this generation pass (lanes present: api, mobile-maestro-android, mobile-maestro-ios, web)
-- privacy-safety: the report carries lane names and per-row outcomes only;
-  the inputs are the repo's own clean runs; nothing secret-shaped
-  (the demos guard scans pack CONTENT; the conventions gate scans FILENAMES)
-- motion-story: no (a report page has no motion surface; the rule-6
-  evidence is the chromium render of the committed page, media/evidence/)
-- qa framing: the page shows what the merge received - present lanes as
-  tables, absent lanes as visible notes, never invented zeros. A green
-  merged summary means the merged rows it received passed; it does not
-  mean every lane ran (that is stated above, honestly)
+- **generated:** 2026-11-17 by the project's own report builder (not published in this repository); the pack is regenerated from the run, never hand-staged.
+- **what ran:** the unified report builder over the JUnit XML produced by the capture runs in the same pass — four lanes (API, Android, iOS, web) merged into one HTML report.
+- **result:** 102 rows merged, 0 failures, 0 errors, 0 skipped.
+- **what the report shows honestly:** lanes that did not report appear as visible notes, never as invented zeros. A green merged summary means the rows it received passed; it does not mean every lane ran, and the page states which lanes reported.
+- **visual evidence:** the committed report page and its chromium render under `media/`, with sha256 in `media/INDEX.md`.
+- **privacy:** lane names and per-row outcomes only; the inputs are the project's own redacted runs.
+- **scope:** a merge of four specific lane outputs from one capture pass.

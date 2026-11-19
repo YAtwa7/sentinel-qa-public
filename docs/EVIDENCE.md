@@ -1,8 +1,6 @@
 # Evidence index
 
-Everything below is a committed artifact produced by a committed generator.
-Open any `results.md` for the headline numbers, then `media/INDEX.md` for the
-sha-swept list of screenshots and recordings.
+Everything below is a committed artifact produced by the project's own tooling. Open any `results.md` for the headline numbers, check `PROVENANCE.md` for scope, then `media/INDEX.md` for the sha-listed screenshots and recordings.
 
 | # | Demonstration | Results | Visual evidence |
 | :-- | :--- | :--- | :--- |
@@ -14,12 +12,12 @@ sha-swept list of screenshots and recordings.
 | 6 | Unified JUnit report across four lanes (102 rows) | [results](../demos/demo-6-unified-report/results.md) | [rendered page](../demos/demo-6-unified-report/media/INDEX.md) |
 | 7 | Live evals: offline adjudication plus honest, dispatch-only refusals | [results](../demos/demo-7-live-evals/results.md) | [refusal transcripts](../demos/demo-7-live-evals/media/INDEX.md) |
 | 8 | Roster/orchestrator audit trail; fail-closed plan and aggregate | [results](../demos/demo-8-roster-audit/results.md) | [audit renders](../demos/demo-8-roster-audit/media/INDEX.md) |
-| 9 | Self-healer flagship: stale locator → guardrailed proposal → real patch → STABLE | [results](../demos/demo-9-self-healer/results.md) | [chain renders](../demos/demo-9-self-healer/media/INDEX.md) |
+| 9 | Self-healer: stale locator → guarded proposal → real patch → STABLE | [results](../demos/demo-9-self-healer/results.md) | [chain renders](../demos/demo-9-self-healer/media/INDEX.md) |
 | 10 | Dashboard over real results, with absent sections visibly empty | [results](../demos/demo-10-dashboard/results.md) | [page render](../demos/demo-10-dashboard/media/INDEX.md) |
 
 ## The video
 
-[linkedin-showcase.mp4](../demos/showcase/linkedin-showcase.mp4) ·
+[showcase.mp4](../demos/showcase/showcase.mp4) ·
 [poster](../demos/showcase/poster.png) ·
-[caption](../demos/showcase/POST.md) ·
+[how it was assembled](../demos/showcase/PROVENANCE.md) ·
 [source hashes](../demos/showcase/source-manifest.json)

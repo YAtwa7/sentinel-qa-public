@@ -1,28 +1,10 @@
-# demo-9-self-healer PROVENANCE
+# demo-9-self-healer — provenance
 
-- generated: 2026-11-17 by `demos/gen-demo9.py run` (committed script; the pack is
-  regenerated, never hand-staged)
-- suite: the repo's real self-healer chain from committed truth - the
-  real failure `harness/fixtures/fail-capture/junit.xml` (2026-10-31,
-  stale locator deliberately mutated) + the real captured DOM; then
-  `harness/ingest.py bridge --format diff`, `harness/healer.py heal`
-  with a sealed audit, real GNU `patch -p1` (dry-run then applied), and
-  a post-patch heal verifier. The mutation, proposal and patch are a
-  REPLAY on a TEMP COPY of `web/pages/LoginPage.ts` - the live repo file
-  is never written (verified: no repo diff)
-- privacy-safety: no credential/token/email shape is written; outputs
-  clean; only committed fixtures + generated transcripts in the
-  pack; the audit JSONL lives only in the temp replay root
-- motion-story: no (a replay transcript has no motion surface; rule 6
-  evidence is the four chromium renders under media/evidence/)
-- honest scope: the source failure and DOM are REAL; the mutation and
-  patch are a controlled replay, never a claim that the live repo was
-  healed or that anything was auto-merged. The proposal is reviewable
-  and applied here by a real patch tool to a temp copy only
-- determinism: the heal audit event carries a wall-clock timestamp at
-  SECOND granularity, so its seal HASH can change between runs in
-  different seconds (two runs in the same second collide). The rendered
-  seal is redacted to a placeholder for byte-identical regeneration.
-  The REAL seal still drives the verify and tamper commands, and their
-  exit codes are the evidence (redact_volatile is tested in the
-  generator's selftest)
+- **generated:** 2026-11-17 by the project's own self-healer generator (not published in this repository); the pack is regenerated from the run, never hand-staged.
+- **what ran:** the healer chain on committed truth — a real Playwright failure with a stale locator (captured 2026-10-31) plus the real captured DOM. The failure bridge maps the failure to a site and emits a diff; the healer proposes a guarded locator fix; real GNU `patch` applies it (dry-run first, then applied) to a temp copy; a post-patch verifier reports STABLE.
+- **what was replayed:** the mutation and the patch apply to a temporary copy of the login page object. The live source file is never written, and the pack records that the working tree stayed clean.
+- **audit:** the proposal carries a tamper-evident audit chain; a deliberately altered record is refused.
+- **visual evidence:** four chromium renders of the chain under `media/evidence/`, with sha256 in `media/INDEX.md`.
+- **privacy:** committed fixtures and generated transcripts only; no credentials or PII.
+- **scope:** the failure and the DOM are real. The fix is a controlled replay applied only to a temp copy, and nothing was auto-merged. The proposal is reviewable by design.
+- **determinism:** the audit record carries a wall-clock timestamp, so the rendered seals are redacted for a byte-identical rebuild.

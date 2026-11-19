@@ -1,23 +1,10 @@
-# demo-4-mobile-android PROVENANCE
+# demo-4-mobile-android — provenance
 
-- generated: 2026-11-18 by `demos/gen-demo4.py run` (committed script; the pack is
-  regenerated, never hand-staged)
-- suite: the repo's committed Maestro flows (REQ-MOB-01..04: login
-  success/failure, catalogue, menu drawer) via `maestro test mobile/flows/
-  --format=JUNIT --output <tmp>/maestro-junit.xml` (maestro 2.11 needs
-  BOTH flags: --output alone and the default NOOP format writes
-  nothing, a recorded incident) - one run, no retries
-- toolchain: maestro 2.11.0 at the PIN (a different
-  version refuses, mobile/toolchain-pins.txt); target: the sha-pinned
-  Sauce Labs practice app (com.swaglabsmobileapp) on the local AVD
-  (`scripts/emulator.sh boot` per mobile/README.md section 3)
-- privacy-safety: the practice app is a public automation-practice target
-  whose test credentials are printed on its own login screen (the flows
-  already commit them); outputs clean of token/email shapes; the
-  pack carries row outcomes, the clean transcript, and the recording
-- motion-story: yes (the flows ARE the motion story): media/video/
-  demo4-android-flows.mp4 recorded from the SAME run via adb screenrecord
-  (recording captured); the guard demands this video for the pack
-- qa framing: a green run shows the four flows holding against the
-  practice app on the pinned toolchain; a red run is committed as red
-  (flake-rule: no retries exist here)
+- **generated:** 2026-11-18 by the project's own Android-lane generator (not published in this repository); the pack is regenerated from the run, never hand-staged.
+- **what ran:** four Maestro flows — login success, login failure, catalogue, menu drawer — on Maestro 2.11 with JUnit output. Maestro 2.11 needs both `--format=JUNIT` and `--output`; `--output` alone writes nothing.
+- **target:** the sha256-pinned Sauce Labs practice app (`com.swaglabsmobileapp`) on a local Android emulator (API 34, headless).
+- **result:** 4/4 flows passed in one run, no retries.
+- **recording:** `media/video/demo4-android-flows.mp4`, captured with `adb screenrecord` during the same run that produced the JUnit rows — not a separate demo.
+- **visual evidence:** the flow matrix, the redacted output tail and the recording, each with size and sha256 in `media/INDEX.md`.
+- **privacy:** the practice app is a public automation target whose test accounts are printed on its own login screen; token/email shapes are removed before anything is written.
+- **scope:** the flows are those four paths, on that emulator and that pinned app build.

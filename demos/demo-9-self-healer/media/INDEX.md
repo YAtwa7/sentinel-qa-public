@@ -1,6 +1,7 @@
-# media index (generator-emitted; swept by demos/check.py)
+# demo-9-self-healer media index
 
 # every line: <media-relative path> (<bytes> bytes, sha256[:16] <sha>)
+# hashes recorded when the pack was generated
 
 - evidence/audit-chain.png (95514 bytes, sha256[:16] fdfb7747b7d83824)
 - evidence/bridge-proposal-patch.png (53661 bytes, sha256[:16] cbabca59305353be)

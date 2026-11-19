@@ -2,10 +2,10 @@
 
 - summary: GREEN: 4 row(s), 0 failure(s), 0 error(s), 0 skipped
 - maestro exit code of the suite run: 0
-- recording: recording captured (media/video/, sha-swept by the demos guard)
-- media: the flow matrix + the clean output tail under media/evidence/
+- recording: recording captured (media/video/, listed with its sha256 in media/INDEX.md)
+- media: the flow matrix + the redacted output tail under media/evidence/
   (see media/INDEX.md)
-- the LAST 4000 CHARS of the (clean) run log: .run-log.txt
+- the LAST 4000 CHARS of the (redacted) run log: .run-log.txt
 
 ## honest framing
 

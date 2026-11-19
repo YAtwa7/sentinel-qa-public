@@ -12,7 +12,7 @@
   workflow run with a configured key, never a demo re-run to green
 - media: three rendered transcripts of the REAL gate output
   (media/evidence/, sha-swept via media/INDEX.md)
-- the bounded, clean run log: .run-log.txt
+- the bounded, redacted run log: .run-log.txt
 
 ## honest framing
 

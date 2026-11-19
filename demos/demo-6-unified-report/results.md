@@ -9,7 +9,7 @@
 - pack artifacts: report/index.html (the committed page) +
   report/junit-merged.xml; media/evidence/report.png is the chromium
   render of the SAME page (see media/INDEX.md)
-- the LAST 4000 CHARS of the (clean) run log: .run-log.txt
+- the LAST 4000 CHARS of the (redacted) run log: .run-log.txt
 
 ## honest framing
 
